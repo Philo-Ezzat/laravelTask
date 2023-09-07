@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<table border="6">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product price</th>
+                <th>Product availablity</th>
+                <th>Product picture</th>
+                <th>Actions</th>
+
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>{{$product->name}}</td>
+                <td>{{$product->price}}</td>
+                <td>{{$product->availability}}</td>
+                <td><img src="../Images/{{$product->image}}" alt="" width="100px"></td>
+                <td><button onclick="location ='/products'">back</button></td>
+            </tr>
+      
+
+        </tbody>
+    </table>
+
+</body>
+</html>
